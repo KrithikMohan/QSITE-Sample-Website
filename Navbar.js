@@ -25,12 +25,16 @@ window.Navbar = function Navbar({ currentPage, navigateTo }) {
   return (
     <div className="fixed top-0 left-0 right-0 z-50 bg-[#030712]/90 backdrop-blur-md border-b border-white/10 font-sans">
       <nav className="max-w-[1400px] mx-auto px-5 sm:px-8 md:px-10 h-[72px] flex items-center justify-between">
-        {/* ── Brand Text (No logo, do NOT expand out QSITE) ── */}
+        {/* ── Logo Image (QSITE_logo_new.webp) ── */}
         <button
           onClick={() => handleLinkClick("home")}
-          className="text-left font-extrabold text-xl sm:text-2xl tracking-tight text-white hover:text-cyan-400 transition-colors focus:outline-none cursor-pointer"
+          className="flex items-center gap-3 focus:outline-none cursor-pointer"
         >
-          QSITE
+          <img
+            src="./QSITE_logo_new.webp"
+            alt="QSITE Logo"
+            className="h-9 sm:h-11 w-auto object-contain"
+          />
         </button>
 
         {/* ── Desktop Navigation ── */}
@@ -59,7 +63,7 @@ window.Navbar = function Navbar({ currentPage, navigateTo }) {
           </button>
         </div>
 
-        {/* ── Mobile Menu Toggle Button (Identical to UQA) ── */}
+        {/* ── Mobile Menu Toggle Button ── */}
         <div className="lg:hidden flex items-center">
           <button
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
@@ -88,7 +92,7 @@ window.Navbar = function Navbar({ currentPage, navigateTo }) {
         </div>
       </nav>
 
-      {/* ── Mobile Menu Drawer (Identical to UQA) ── */}
+      {/* ── Mobile Menu Drawer ── */}
       {isMobileMenuOpen && (
         <div className="lg:hidden px-5 py-4 border-t border-white/10 space-y-3 bg-[#030712]/95 animate-fade-in">
           <div className="flex flex-col space-y-1">
