@@ -1,0 +1,77 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: #030712;
+  color: #f8fafc;
+}
+
+body {
+  background-color: #030712;
+  color: #e2e8f0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  overflow-x: hidden;
+  min-height: 100vh;
+}
+
+/* Quantum ambient background glow orbs */
+.ambient-glow-cyan {
+  position: absolute;
+  width: 55vw;
+  height: 55vw;
+  max-width: 700px;
+  max-height: 700px;
+  background: radial-gradient(circle, rgba(34, 211, 238, 0.12) 0%, rgba(34, 211, 238, 0) 70%);
+  filter: blur(80px);
+  pointer-events: none;
+  border-radius: 9999px;
+  z-index: 0;
+}
+
+.ambient-glow-purple {
+  position: absolute;
+  width: 50vw;
+  height: 50vw;
+  max-width: 650px;
+  max-height: 650px;
+  background: radial-gradient(circle, rgba(168, 85, 247, 0.1) 0%, rgba(168, 85, 247, 0) 70%);
+  filter: blur(80px);
+  pointer-events: none;
+  border-radius: 9999px;
+  z-index: 0;
+}
+
+/* Glassmorphism primitives */
+.glass-panel {
+  background-color: rgba(15, 23, 42, 0.45);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.glass-panel-hover {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.glass-panel-hover:hover {
+  border-color: rgba(34, 211, 238, 0.35);
+  box-shadow: 0 0 25px rgba(34, 211, 238, 0.08);
+  transform: translateY(-2px);
+}
+
+/* Skeleton dashed placeholder outline */
+.dashed-wireframe {
+  border: 1.5px dashed rgba(255, 255, 255, 0.18);
+  background: rgba(255, 255, 255, 0.02);
+  transition: border-color 0.2s ease;
+}
+
+.dashed-wireframe:hover {
+  border-color: rgba(34, 211, 238, 0.4);
+}
