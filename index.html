@@ -3,30 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Q-SITE 2026 — Quantum Science, Information Technology and Engineering</title>
+    <title>QSITE 2026</title>
 
-    <!-- React 18 & Babel Standalone (matching umd-uqa stack) -->
+    <!-- Google Fonts: Geist & Geist Mono (from Quantum Coalition Learning Resource) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700;800;900&family=Geist+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- React 18 & Babel Standalone (identical to UQA stack) -->
     <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
     <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/7.23.5/babel.min.js"></script>
 
-    <!-- Tailwind CSS via CDN -->
+    <!-- Tailwind CSS via CDN with Quantum Coalition color palette & Geist fonts -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
             darkMode: 'class',
             theme: {
                 extend: {
+                    fontFamily: {
+                        sans: ['Geist', 'system-ui', 'sans-serif'],
+                        mono: ['Geist Mono', 'monospace'],
+                    },
                     colors: {
                         space: {
                             950: '#030712',
                             900: '#020617',
-                            800: '#0b1226',
+                            800: '#0f172a',
                         },
                         quantum: {
                             cyan: '#22d3ee',
                             purple: '#a855f7',
-                            sky: '#38bdf8',
+                            blue: '#38bdf8',
                         }
                     }
                 }
@@ -35,19 +44,20 @@
     </script>
 
     <style>
-        html {
-            scroll-behavior: smooth;
-            background-color: #030712;
-            color: #f8fafc;
+        .animate-fade-in {
+            animation: fadeIn 0.15s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(2px); }
+            to { opacity: 1; transform: translateY(0); }
         }
 
         body {
             background-color: #030712;
             color: #f8fafc;
             margin: 0;
-            font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            font-family: 'Geist', system-ui, sans-serif;
             min-height: 100vh;
-            overflow-x: hidden;
         }
 
         #root {
@@ -55,27 +65,20 @@
             flex-direction: column;
             min-height: 100vh;
         }
-
-        .animate-fade-in {
-            animation: fadeIn 0.18s cubic-bezier(0.16, 1, 0.3, 1);
-        }
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(3px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
     </style>
 </head>
-<body class="bg-[#030712] text-slate-100">
-    <div id="root"></div>
+<body class="bg-[#030712] text-slate-100 font-sans">
+<div id="root"></div>
 
-    <!-- Application Components -->
-    <script type="text/babel" src="./Navbar.js"></script>
-    <script type="text/babel" src="./Home.js"></script>
-    <script type="text/babel" src="./Schedule.js"></script>
-    <script type="text/babel" src="./Sponsors.js"></script>
-    <script type="text/babel" src="./Support.js"></script>
+<!-- Application Components (UQA pattern) -->
+<script type="text/babel" src="./Navbar.js"></script>
+<script type="text/babel" src="./Home.js"></script>
+<script type="text/babel" src="./Schedule.js"></script>
+<script type="text/babel" src="./Sponsors.js"></script>
+<script type="text/babel" src="./Support.js"></script>
+<script type="text/babel" src="./Registration.js"></script>
 
-    <!-- Main Router & Shell -->
-    <script type="text/babel" src="./App.js"></script>
+<!-- Main App Router -->
+<script type="text/babel" src="./App.js"></script>
 </body>
 </html>
