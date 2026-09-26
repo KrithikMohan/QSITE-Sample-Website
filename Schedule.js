@@ -47,7 +47,7 @@ window.Schedule = function Schedule({ navigateTo }) {
           description: "Hands-on sessions showcasing current quantum tools, both hardware and software, at a beginner-to-intermediate level.",
         },
         {
-          time: "12:00 – 15:00",
+          time: "14:00 – 15:00",
           title: "Accessing Research Workshop",
           description: "Helping students create a concrete strategy for identifying a research area, reaching out to a PI, finding REUs, and developing the skills to be successful in research.",
         },
