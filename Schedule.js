@@ -49,12 +49,12 @@ window.Schedule = function Schedule({ navigateTo }) {
         {
           time: "14:00 – 15:00",
           title: "Accessing Research Workshop",
-          description: "Helping students create a concrete strategy for identifying a research area, reaching out to a PI, finding REUs, and developing the skills to be successful in research.",
+          description: "Helping students create a concrete strategy for identifying a research area, reaching out to a PI, finding REUs, and developing the requisite skills to be successful in research.",
         },
         {
           time: "15:00 – 15:45",
           title: "Frontiers in Quantum Research Panel",
-          description: "Industry research leaders share active research challenges and guiding questions for future research.",
+          description: "Industry research leaders share open challenges and the questions guiding their future work.",
         },
         {
           time: "16:00 – 18:30",
@@ -91,7 +91,7 @@ window.Schedule = function Schedule({ navigateTo }) {
         },
         {
           time: "16:15 – 17:00",
-          title: "Closing Ceremony & UQA Hackathon Kickoff",
+          title: "Closing Ceremony & Hackathon Kickoff",
         },
       ],
     },
