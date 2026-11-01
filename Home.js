@@ -33,7 +33,7 @@ window.Home = function Home({ navigateTo }) {
             Registration
           </button>
           <button
-            onClick={() => handleNav("schedule")}
+            onClick={() => handleNav("poster-submission")}
             className="border border-cyan-400/40 text-cyan-300 hover:bg-white/5 px-8 py-3.5 rounded-md font-extrabold text-[15px] transition-all cursor-pointer w-full sm:w-auto text-center"
           >
             Poster Submission

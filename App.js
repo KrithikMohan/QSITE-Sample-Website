@@ -39,10 +39,13 @@ function QSITEWebsite() {
         {currentPage === "sponsors" && window.Sponsors && <window.Sponsors navigateTo={navigateTo} />}
         {currentPage === "support" && window.Support && <window.Support navigateTo={navigateTo} />}
         {currentPage === "registration" && window.Registration && <window.Registration navigateTo={navigateTo} />}
+        {(currentPage === "poster-submission" || currentPage === "poster") && window.PosterSubmission && (
+          <window.PosterSubmission navigateTo={navigateTo} />
+        )}
 
         {/* Fallback display */}
         {(!window[currentPage.charAt(0).toUpperCase() + currentPage.slice(1)] &&
-          !["home", "schedule", "sponsors", "support", "registration"].includes(currentPage)) && (
+          !["home", "schedule", "sponsors", "support", "registration", "poster", "poster-submission"].includes(currentPage)) && (
           <div className="flex flex-col items-center justify-center min-h-[60vh] text-center px-4">
             <h2 className="text-2xl font-bold text-white mb-2">Page Not Found</h2>
             <button

@@ -8,7 +8,7 @@ window.Navbar = function Navbar({ currentPage, navigateTo }) {
     { id: "schedule", label: "Schedule" },
     { id: "sponsors", label: "Sponsors" },
     { id: "support", label: "Support" },
-    { id: "registration", label: "Registration" },
+    { id: "poster-submission", label: "Poster Submission" },
   ];
 
   const handleLinkClick = (id) => {
@@ -20,7 +20,9 @@ window.Navbar = function Navbar({ currentPage, navigateTo }) {
     }
   };
 
-  const isItemActive = (id) => currentPage === id;
+  const isItemActive = (id) =>
+    currentPage === id ||
+    (id === "poster-submission" && (currentPage === "poster-submission" || currentPage === "poster"));
 
   return (
     <div className="fixed top-0 left-0 right-0 z-50 bg-[#030712]/90 backdrop-blur-md border-b border-white/10 font-sans">

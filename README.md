@@ -9,6 +9,7 @@ A clean, lightweight website skeleton for **QSITE 2026**.
 - **Pages**:
   - `Home.js`: Hero with interactive atom/orbital visual, Registration and Poster Submission buttons, empty skeleton sections for Conference Overview, Past Metrics, and Quantum Coalition.
   - `Registration.js`: Dedicated registration page with empty skeleton sections.
+  - `PosterSubmission.js`: Dedicated poster submission page with embedded Google Form application.
   - `Schedule.js`: Chronological agenda skeleton with placeholder slots for Keynote Talks, Breakout Panels, and Poster Exhibition.
   - `Sponsors.js`: Partner outreach tiers & confirmed sponsors logo showcase skeletons.
   - `Support.js`: Logistics FAQ & direct contact channels skeletons.
