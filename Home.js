@@ -13,7 +13,6 @@ window.Home = function Home({ navigateTo }) {
       <section className="relative flex flex-col items-center justify-center text-center px-5 sm:px-8 md:px-10 pt-20 pb-20 sm:pt-28 sm:pb-24 overflow-hidden">
         {/* Ambient Radial Background Glows (Ice Blue + Quantum Purple) */}
         <div className="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 z-0 w-[600px] h-[350px] bg-[radial-gradient(ellipse_at_center,rgba(168,85,247,0.18)_0%,rgba(125,211,252,0.12)_45%,transparent_70%)] blur-2xl pointer-events-none" />
-
         {/* Brand Logo Integration - Enhanced Scale & Glow */}
         <div className="relative z-10 mb-8 flex justify-center">
           <img 
@@ -32,7 +31,7 @@ window.Home = function Home({ navigateTo }) {
         </h1>
 
         {/* Hero Subtitle */}
-        <p className="relative z-10 text-lg sm:text-2xl text-slate-300/90 max-w-2xl mx-auto mb-10 leading-relaxed font-normal">
+        <p className="relative z-10 text-lg sm:text-2xl text-slate-300/90 max-w-full mx-auto mb-10 leading-relaxed font-normal">
           Pathways into Quantum <span className="text-blue-400 mx-2">•</span> March 3–5, 2027 <span className="text-blue-400 mx-2">•</span> University of Maryland
         </p>
 
@@ -59,8 +58,7 @@ window.Home = function Home({ navigateTo }) {
         {/* Conference Overview */}
         <section>
           <div className="flex items-center gap-3 mb-8">
-            <span className="h-2 w-2 rounded-full bg-sky-300 shadow-[0_0_8px_#7dd3fc]"></span>
-            <h2 className="text-[15px] font-extrabold tracking-[0.22em] uppercase text-sky-300">
+            <h2 className="text-[15px] font-extrabold tracking-[0.22em] uppercase text-sky-200">
               Conference Overview
             </h2>
           </div>
@@ -71,10 +69,12 @@ window.Home = function Home({ navigateTo }) {
                 Building Early-Career Pathways into Quantum Technology
               </h3>
               <p className="text-slate-300 text-base sm:text-lg leading-relaxed font-light">
-                Organized by the <strong className="text-sky-200 font-semibold">Quantum Coalition</strong>, 
-                <strong className="text-white font-semibold"> Q-SITE USA 2027</strong> makes its U.S. debut at the 
-                University of Maryland. Designed specifically for 1st–3rd year undergraduate STEM students, 
-                this 3-day event transforms initial quantum curiosity into actionable research and industry careers.
+                The Quantum Science, Information, Technology, and Engineering conference (Q-SITE)
+                is an undergraduate-organized quantum computing conference which has been held
+                at the Unversities of Toronto and Vancouver since 2022. This year, <strong className="text-white font-semibold"> Q-SITE USA 2027</strong>
+                makes its U.S. debut at the University of Maryland, a hub of quantum science. The goal of this conference is to
+                help undergraduate students launch their careers and explore opportunities in quantum computing 
+                by connecting with academic and industry leaders.
               </p>
             </div>
 
