@@ -59,7 +59,7 @@ function QSITEWebsite() {
       </main>
 
       {/* ── FOOTER (UQA structure, no expanded name) ── */}
-      <footer className="bg-[#020617] border-t border-white/10 mt-16">
+      <footer className="bg-[#0a0618] border-t border-sky-400 mt-16">
         <div className="max-w-[1400px] mx-auto px-5 sm:px-8 md:px-10 py-12 flex flex-col sm:flex-row items-center justify-between gap-4 text-center sm:text-left text-slate-400 text-sm">
           <p>© 2026 QSITE</p>
           <div className="flex items-center gap-6 text-xs">

@@ -22,20 +22,21 @@ window.Navbar = function Navbar({ currentPage, navigateTo }) {
 
   const isItemActive = (id) =>
     currentPage === id ||
-    (id === "poster-submission" && (currentPage === "poster-submission" || currentPage === "poster"));
+    (id === "poster-submission" &&
+      (currentPage === "poster-submission" || currentPage === "poster"));
 
   return (
-    <div className="fixed top-0 left-0 right-0 z-50 bg-[#030712]/90 backdrop-blur-md border-b border-white/10 font-sans">
+    <div className="fixed top-0 left-0 right-0 z-50 bg-[#0a0618]/90 backdrop-blur-md border-b border-blue-500/20 font-sans">
       <nav className="max-w-[1400px] mx-auto px-5 sm:px-8 md:px-10 h-[72px] flex items-center justify-between">
-        {/* ── Logo Image (QSITE_logo_new.webp) ── */}
+        {/* ── Logo Image (QSITE_logo_new.svg) ── */}
         <button
           onClick={() => handleLinkClick("home")}
-          className="flex items-center gap-3 focus:outline-none cursor-pointer"
+          className="flex items-center gap-3 focus:outline-none cursor-pointer group"
         >
           <img
-            src="./QSITE_logo_new.webp"
-            alt="QSITE Logo"
-            className="h-9 sm:h-11 w-auto object-contain"
+            src="/images/QSITE_icon.svg"
+            alt="QSITE USA Logo"
+            className="h-9 sm:h-11 w-auto object-contain transition-transform group-hover:scale-105 drop-shadow-[0_0_12px_rgba(56,189,248,0.3)]"
           />
         </button>
 
@@ -46,10 +47,10 @@ window.Navbar = function Navbar({ currentPage, navigateTo }) {
               <button
                 key={item.id}
                 onClick={() => handleLinkClick(item.id)}
-                className={`text-sm font-medium transition-colors cursor-pointer ${
+                className={`text-sm font-medium transition-all cursor-pointer ${
                   isItemActive(item.id)
-                    ? "text-cyan-400 font-bold"
-                    : "text-slate-300 hover:text-white"
+                    ? "text-sky-300 font-bold drop-shadow-[0_0_8px_rgba(125,211,252,0.4)]"
+                    : "text-slate-300 hover:text-white hover:drop-shadow-[0_0_6px_rgba(255,255,255,0.3)]"
                 }`}
               >
                 {item.label}
@@ -59,7 +60,7 @@ window.Navbar = function Navbar({ currentPage, navigateTo }) {
 
           <button
             onClick={() => handleLinkClick("registration")}
-            className="px-6 py-2.5 rounded-md bg-cyan-400 hover:bg-cyan-300 text-black font-extrabold text-xs tracking-wide transition-all shadow-md cursor-pointer"
+            className="px-6 py-2.5 rounded-md bg-sky-400 text-slate-950 font-extrabold text-xs tracking-wide transition-all shadow-[0_0_15px_rgba(56,189,248,0.25)] hover:shadow-[0_0_22px_rgba(56,189,248,0.45)] hover:scale-[1.02] cursor-pointer"
           >
             Registration
           </button>
@@ -71,12 +72,12 @@ window.Navbar = function Navbar({ currentPage, navigateTo }) {
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             aria-label="Toggle Navigation Menu"
             aria-expanded={isMobileMenuOpen}
-            className="p-2.5 rounded-xl bg-white/5 hover:bg-white/10 text-white border border-white/10 transition-colors focus:outline-none"
+            className="p-2.5 rounded-xl bg-purple-950/30 hover:bg-purple-900/40 text-white border border-blue-500/20 transition-colors focus:outline-none cursor-pointer"
           >
             <div className="w-6 h-5 flex flex-col justify-between items-center relative">
               <span
                 className={`h-0.5 w-6 bg-white rounded-full transition-all duration-300 transform ${
-                  isMobileMenuOpen ? "rotate-45 translate-y-2 bg-cyan-400" : ""
+                  isMobileMenuOpen ? "rotate-45 translate-y-2 bg-sky-300" : ""
                 }`}
               />
               <span
@@ -86,7 +87,7 @@ window.Navbar = function Navbar({ currentPage, navigateTo }) {
               />
               <span
                 className={`h-0.5 w-6 bg-white rounded-full transition-all duration-300 transform ${
-                  isMobileMenuOpen ? "-rotate-45 -translate-y-2 bg-cyan-400" : ""
+                  isMobileMenuOpen ? "-rotate-45 -translate-y-2 bg-sky-300" : ""
                 }`}
               />
             </div>
@@ -96,30 +97,30 @@ window.Navbar = function Navbar({ currentPage, navigateTo }) {
 
       {/* ── Mobile Menu Drawer ── */}
       {isMobileMenuOpen && (
-        <div className="lg:hidden px-5 py-4 border-t border-white/10 space-y-3 bg-[#030712]/95 animate-fade-in">
+        <div className="lg:hidden px-5 py-4 border-t border-blue-500/20 space-y-3 bg-[#0a0618]/95 backdrop-blur-lg animate-fade-in">
           <div className="flex flex-col space-y-1">
             {navigation.map((item) => (
               <button
                 key={item.id}
                 onClick={() => handleLinkClick(item.id)}
-                className={`px-4 py-2.5 rounded-xl text-left font-semibold text-base transition-colors flex items-center justify-between ${
+                className={`px-4 py-2.5 rounded-xl text-left font-semibold text-base transition-colors flex items-center justify-between cursor-pointer ${
                   isItemActive(item.id)
-                    ? "bg-cyan-950/40 text-cyan-400"
+                    ? "bg-purple-950/50 text-sky-300 border border-blue-500/30"
                     : "text-slate-300 hover:bg-white/5 hover:text-white"
                 }`}
               >
                 <span>{item.label}</span>
                 {isItemActive(item.id) && (
-                  <span className="w-2 h-2 rounded-full bg-cyan-400"></span>
+                  <span className="w-2 h-2 rounded-full bg-sky-300 shadow-[0_0_8px_rgba(125,211,252,0.8)]"></span>
                 )}
               </button>
             ))}
           </div>
 
-          <div className="pt-2 border-t border-white/10">
+          <div className="pt-2 border-t border-blue-500/20">
             <button
               onClick={() => handleLinkClick("registration")}
-              className="w-full py-2.5 px-4 rounded-md font-extrabold text-xs bg-cyan-400 text-black hover:bg-cyan-300 transition-all flex items-center justify-center"
+              className="w-full py-2.5 px-4 rounded-md font-extrabold text-xs bg-sky-400 text-slate-950 hover:shadow-[0_0_20px_rgba(56,189,248,0.4)] transition-all flex items-center justify-center cursor-pointer"
             >
               Registration
             </button>
