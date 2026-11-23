@@ -64,8 +64,8 @@ window.Support = function Support({ navigateTo }) {
   ];
 
   const links = [
-    { label: "Quantum Coalition", href: "https://quantumcoalition.io", display: "quantumcoalition.io" },
-    { label: "Q-SITE", href: "https://qsiteconf.ca", display: "qsiteconf.ca" },
+    { label: "Quantum Coalition", href: "mailto:coalition.quantum@gmail.com", display: "coalition.quantum@gmail.com" },
+    { label: "UMD UQA", href: "mailto:umd.uqa@gmail.com", display: "umd.uqa@gmail.com" },
   ];
 
   return (
@@ -165,11 +165,6 @@ window.Support = function Support({ navigateTo }) {
                 <p className="font-mono text-[15px] text-sky-300">{link.display}</p>
               </a>
             ))}
-            {/* TODO: replace with the organizing team's contact email */}
-            <div className="rounded-[4px] border border-dashed border-blue-500/30 bg-[#140c2a]/70 p-5 flex flex-col justify-center">
-              <p className="text-[13px] font-extrabold tracking-[0.22em] uppercase text-slate-500 mb-1">Email</p>
-              <p className="font-mono text-sm text-slate-500">[ UQA email here ]</p>
-            </div>
           </div>
         </section>
       </div>

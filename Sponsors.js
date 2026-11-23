@@ -38,8 +38,8 @@ window.Sponsors = function Sponsors({ navigateTo }) {
       <div className="max-w-[1400px] mx-auto px-5 sm:px-8 md:px-10 py-12 pb-24 space-y-16">
         
 
-        <div className="bg-[#140c2a]/70 rounded-2xl border border-purple-500/20 p-8 text-center backdrop-blur-md shadow-[0_10px_30px_rgba(15,8,38,0.5)] mb-10">
-            <h3 className="text-xl font-bold text-white mb-2">Anouncing 2027 Partners Soon!</h3>
+        <div className="bg-[#140c2a]/70 rounded-[4px] border border-purple-500/20 p-8 text-center backdrop-blur-md shadow-[0_10px_30px_rgba(15,8,38,0.5)] mb-10">
+            <h3 className="text-xl font-bold text-white mb-2">Announcing 2027 sponsors soon!</h3>
             <p className="text-slate-300/80 text-sm max-w-2xl mx-auto font-light leading-relaxed mb-6">
               Official sponsor announcements for Q-SITE USA 2027 will be shared as confirmations are finalized.
               We are eager to partner with industry leaders, national labs, and academic institutions to empower early-career quantum talent. Reach out if your organization is interested in participating!
@@ -67,7 +67,7 @@ window.Sponsors = function Sponsors({ navigateTo }) {
             {sponsorBenefits.map((benefit, idx) => (
               <div
                 key={idx}
-                className="bg-[#140c2a]/70 rounded-2xl border border-purple-500/20 p-6 backdrop-blur-md hover:border-sky-400/40 transition-colors flex flex-col justify-between"
+                className="bg-[#140c2a]/70 rounded-[4px] border border-purple-500/20 p-6 backdrop-blur-md hover:border-sky-400/40 transition-colors flex flex-col justify-between"
               >
                 <div>
                   <h3 className="text-lg font-bold text-white mb-2">{benefit.title}</h3>
@@ -93,7 +93,7 @@ window.Sponsors = function Sponsors({ navigateTo }) {
               {pastPartners.map((partner, pIdx) => (
                 <div
                   key={pIdx}
-                  className="h-20 rounded-xl border border-purple-500/20 bg-[#1c1238]/50 flex items-center justify-center text-slate-300 font-semibold text-sm text-center p-3 backdrop-blur-sm hover:border-sky-400/40 hover:bg-[#1c1238]/80 transition-all group"
+                  className="h-20 rounded-[4px] border border-purple-500/20 bg-[#1c1238]/50 flex items-center justify-center text-slate-300 font-semibold text-sm text-center p-3 backdrop-blur-sm hover:border-sky-400/40 hover:bg-[#1c1238]/80 transition-all group"
                 >
                   <span className="group-hover:text-sky-300 transition-colors">{partner}</span>
                 </div>
