@@ -75,7 +75,7 @@ window.Support = function Support({ navigateTo }) {
         <h1 className="text-[clamp(32px,5vw,48px)] font-extrabold tracking-tight leading-[1.2] mb-4 text-sky-300">
           Support
         </h1>
-        <p className="text-[18px] sm:text-[20px] text-slate-400 mb-12 leading-relaxed max-w-3xl">
+        <p className="text-[18px] sm:text-[20px] text-slate-400 mb-12 leading-relaxed max-w-full">
           Answers to common questions about Q-SITE USA 2027, and how to reach the organizing team.
         </p>
 
@@ -84,7 +84,7 @@ window.Support = function Support({ navigateTo }) {
           <h2 className="text-[16px] font-extrabold tracking-[0.22em] uppercase text-sky-300 mb-6">
             Logistics FAQ
           </h2>
-          <div className="rounded-[4px] border border-blue-500/20 bg-[#140c2a]/70 divide-y divide-blue-500/15 backdrop-blur-md max-w-4xl">
+          <div className="rounded-[4px] border border-blue-500/20 bg-[#140c2a]/70 divide-y divide-blue-500/15 backdrop-blur-md max-w-full">
             {faqs.map((faq, i) => {
               const isOpen = openIndex === i;
               return (
@@ -135,7 +135,7 @@ window.Support = function Support({ navigateTo }) {
 
           {/* Organizing committee */}
           <h3 className="text-[20px] font-extrabold tracking-tight text-white mb-2">Organizing Committee</h3>
-          <p className="text-[15px] text-slate-400 mb-6 max-w-3xl">
+          <p className="text-[15px] text-slate-400 mb-6 max-w-full">
             Organized with the support of the Undergraduate Quantum Association at the University of Maryland, College Park.
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-10">
@@ -168,7 +168,7 @@ window.Support = function Support({ navigateTo }) {
             {/* TODO: replace with the organizing team's contact email */}
             <div className="rounded-[4px] border border-dashed border-blue-500/30 bg-[#140c2a]/70 p-5 flex flex-col justify-center">
               <p className="text-[13px] font-extrabold tracking-[0.22em] uppercase text-slate-500 mb-1">Email</p>
-              <p className="font-mono text-sm text-slate-500">[ Contact email coming soon ]</p>
+              <p className="font-mono text-sm text-slate-500">[ UQA email here ]</p>
             </div>
           </div>
         </section>
