@@ -18,7 +18,7 @@ window.Home = function Home({ navigateTo }) {
           <img 
             src="/images/QSITE_logo_new.svg" 
             alt="Q-SITE USA Logo" 
-            className="h-20 sm:h-24 md:h-28 w-auto object-contain drop-shadow-[0_0_35px_rgba(125,211,252,0.35)] hover:scale-105 transition-transform duration-300"
+            className="h-20 sm:h-24 md:h-28 w-auto object-contain drop-shadow-[0_0_35px_rgba(125,211,252,0.35)] transition-transform duration-300"
           />
         </div>
 
@@ -39,13 +39,13 @@ window.Home = function Home({ navigateTo }) {
         <div className="relative z-10 flex flex-col sm:flex-row gap-4 w-full sm:w-auto items-center justify-center">
           <button
             onClick={() => handleNav("registration")}
-            className="bg-sky-400 hover:bg-sky-300 text-slate-950 px-8 py-3.5 rounded-lg font-extrabold text-[15px] transition-all cursor-pointer w-full sm:w-auto text-center shadow-[0_0_25px_rgba(56,189,248,0.35)] hover:shadow-[0_0_35px_rgba(56,189,248,0.5)] active:scale-95"
+            className="bg-sky-400 hover:bg-sky-300 hover:scale-105 text-slate-950 px-8 py-3.5 rounded-full font-extrabold text-[15px] transition-all cursor-pointer w-full sm:w-auto text-center hover:bg-sky-300 active:scale-95"
           >
             Registration
           </button>
           <button
             onClick={() => handleNav("poster-submission")}
-            className="border border-sky-300/40 text-sky-200 hover:bg-blue-900/30 hover:border-blue-400/60 px-8 py-3.5 rounded-lg font-extrabold text-[15px] transition-all cursor-pointer w-full sm:w-auto text-center backdrop-blur-md active:scale-95"
+            className="border border-sky-300/40 text-sky-200 hover:bg-blue-900/30 hover:scale-105 hover:border-blue-400/60 px-8 py-3.5 rounded-full font-extrabold text-[15px] transition-all cursor-pointer w-full sm:w-auto text-center backdrop-blur-md active:scale-95"
           >
             Poster Submission
           </button>
@@ -58,22 +58,22 @@ window.Home = function Home({ navigateTo }) {
         {/* Conference Overview */}
         <section>
           <div className="flex items-center gap-3 mb-8">
-            <h2 className="text-[15px] font-extrabold tracking-[0.22em] uppercase text-sky-200">
-              Conference Overview
+            <h2 className="text-[15px] font-extrabold tracking-[0.22em] uppercase text-sky-300">
+              About the QSITE Conference
             </h2>
           </div>
 
-          <div className="bg-[#140c2a]/70 rounded-2xl border border-blue-500/20 p-6 sm:p-10 space-y-8 backdrop-blur-md shadow-[0_10px_30px_rgba(15,8,38,0.5)]">
+          <div className="bg-[#140c2a]/70 rounded-[4px] border border-blue-500/20 p-6 sm:p-10 space-y-8 backdrop-blur-md shadow-[0_10px_30px_rgba(15,8,38,0.5)]">
             <div className="w-full">
               <h3 className="text-2xl sm:text-3xl font-extrabold text-white mb-4 leading-snug">
-                Building Early-Career Pathways into Quantum Technology
+                Building Career Pathways into Quantum Technology
               </h3>
               <p className="text-slate-300 text-base sm:text-lg leading-relaxed font-light">
                 The Quantum Science, Information, Technology, and Engineering conference (Q-SITE)
                 is an undergraduate-organized quantum computing conference which has been held
-                at the Unversities of Toronto and Vancouver since 2022. This year, <strong className="text-white font-semibold"> Q-SITE USA 2027</strong>
-                makes its U.S. debut at the University of Maryland, a hub of quantum science. The goal of this conference is to
-                help undergraduate students launch their careers and explore opportunities in quantum computing 
+                at the Unversities of Toronto and Vancouver since 2022. This year, <strong className="text-sky-200 font-semibold"> Q-SITE USA 2027 </strong>
+                makes its U.S. debut at the University of Maryland, a hub of quantum science and innovation. The goal of this conference is to
+                support undergraduate students in launching their careers and explore opportunities in quantum computing 
                 by connecting with academic and industry leaders.
               </p>
             </div>
@@ -81,29 +81,29 @@ window.Home = function Home({ navigateTo }) {
             {/* 3-Day Program Trajectory Grid */}
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 pt-4">
               {/* Day 1 */}
-              <div className="bg-[#1c1238]/60 rounded-xl p-6 border border-blue-400/15 space-y-3 hover:border-sky-400/40 transition-colors group">
+              <div className="bg-[#1c1238]/60 rounded-[4px] p-6 border border-blue-400/15 space-y-3 hover:border-sky-400/40 transition-colors group">
                 <div className="text-xs font-bold uppercase tracking-wider text-sky-300 group-hover:text-sky-200">Day 1 • Wed, Mar 3</div>
                 <h4 className="text-xl font-bold text-white">Foundations & Careers</h4>
                 <p className="text-slate-300/80 text-sm leading-relaxed">
-                  "Quantum 101" introductory sessions, Workforce Keynote, "My Day-to-Day in Quantum" lightning talks, and guided UMD quantum lab tours.
+                  Introduction to the field of quantum computing: introductory workshops on quantum computing, lightning talks from current researchers about their career journeys, and guided tours of quantum labs at UMD
                 </p>
               </div>
 
               {/* Day 2 */}
-              <div className="bg-[#1c1238]/60 rounded-xl p-6 border border-blue-400/15 space-y-3 hover:border-sky-400/40 transition-colors group">
+              <div className="bg-[#1c1238]/60 rounded-[4px] p-6 border border-blue-400/15 space-y-3 hover:border-sky-400/40 transition-colors group">
                 <div className="text-xs font-bold uppercase tracking-wider text-sky-300 group-hover:text-sky-200">Day 2 • Thu, Mar 4</div>
                 <h4 className="text-xl font-bold text-white">Research & Skills</h4>
                 <p className="text-slate-300/80 text-sm leading-relaxed">
-                  Hardware platform keynotes, hands-on tool workshops (IBM, Xanadu, IonQ), REU & research entry guidance, and student research presentations.
+                  Getting started in quantum research: hands-on workshops on current quantum computing hardware and software tools, guided support for accessing research opportunities, and student research talks and poster session
                 </p>
               </div>
 
               {/* Day 3 */}
-              <div className="bg-[#1c1238]/60 rounded-xl p-6 border border-blue-400/15 space-y-3 hover:border-sky-400/40 transition-colors group">
+              <div className="bg-[#1c1238]/60 rounded-[4px] p-6 border border-blue-400/15 space-y-3 hover:border-sky-400/40 transition-colors group">
                 <div className="text-xs font-bold uppercase tracking-wider text-sky-300 group-hover:text-sky-200">Day 3 • Fri, Mar 5</div>
                 <h4 className="text-xl font-bold text-white">Industry & Workforce</h4>
                 <p className="text-slate-300/80 text-sm leading-relaxed">
-                  Graduate school panel, resume & technical interview prep workshops, and the Quantum Career & Grad School Fair.
+                  Careers in the quantum industry: Graduate school panel, resume & technical interview prep workshops, and a career fair to network with industry leaders.
                 </p>
               </div>
             </div>
@@ -115,28 +115,27 @@ window.Home = function Home({ navigateTo }) {
         {/* Past Metrics */}
         <section>
           <div className="flex items-center gap-3 mb-8">
-            <span className="h-2 w-2 rounded-full bg-sky-300 shadow-[0_0_8px_#7dd3fc]"></span>
             <h2 className="text-[15px] font-extrabold tracking-[0.22em] uppercase text-sky-300">
               Past Metrics & Network Reach
             </h2>
           </div>
 
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-            <div className="bg-[#140c2a]/70 rounded-xl border border-blue-500/20 p-6 text-center flex flex-col justify-center items-center shadow-[0_4px_20px_rgba(0,0,0,0.2)] hover:border-sky-400/40 transition-colors">
-              <span className="text-4xl sm:text-5xl font-black text-sky-300 mb-1 drop-shadow-[0_0_12px_rgba(125,211,252,0.3)]">587+</span>
-              <span className="text-slate-400 text-xs sm:text-sm font-medium">Q-SITE Registrations</span>
+            <div className="bg-[#140c2a]/70 rounded-[4px] border border-blue-500/20 p-6 text-center flex flex-col justify-center items-center shadow-[0_4px_20px_rgba(0,0,0,0.2)] hover:border-sky-400/40 transition-colors">
+              <span className="text-4xl sm:text-5xl font-black text-sky-300 mb-1">587+</span>
+              <span className="text-slate-400 text-xs sm:text-sm font-medium">Past Q-SITE Attendees</span>
             </div>
-            <div className="bg-[#140c2a]/70 rounded-xl border border-blue-500/20 p-6 text-center flex flex-col justify-center items-center shadow-[0_4px_20px_rgba(0,0,0,0.2)] hover:border-sky-400/40 transition-colors">
-              <span className="text-4xl sm:text-5xl font-black text-sky-300 mb-1 drop-shadow-[0_0_12px_rgba(125,211,252,0.3)]">15+</span>
-              <span className="text-slate-400 text-xs sm:text-sm font-medium">Partner Universities</span>
+            <div className="bg-[#140c2a]/70 rounded-[4px] border border-blue-500/20 p-6 text-center flex flex-col justify-center items-center shadow-[0_4px_20px_rgba(0,0,0,0.2)] hover:border-sky-400/40 transition-colors">
+              <span className="text-4xl sm:text-5xl font-black text-sky-300 mb-1 ">15</span>
+              <span className="text-slate-400 text-xs sm:text-sm font-medium">Partner quantum computing clubs</span>
             </div>
-            <div className="bg-[#140c2a]/70 rounded-xl border border-blue-500/20 p-6 text-center flex flex-col justify-center items-center shadow-[0_4px_20px_rgba(0,0,0,0.2)] hover:border-sky-400/40 transition-colors">
-              <span className="text-4xl sm:text-5xl font-black text-sky-300 mb-1 drop-shadow-[0_0_12px_rgba(125,211,252,0.3)]">2,100+</span>
+            <div className="bg-[#140c2a]/70 rounded-[4px] border border-blue-500/20 p-6 text-center flex flex-col justify-center items-center shadow-[0_4px_20px_rgba(0,0,0,0.2)] hover:border-sky-400/40 transition-colors">
+              <span className="text-4xl sm:text-5xl font-black text-sky-300 mb-1 ">2,100+</span>
               <span className="text-slate-400 text-xs sm:text-sm font-medium">Past Event Participants</span>
             </div>
-            <div className="bg-[#140c2a]/70 rounded-xl border border-blue-500/20 p-6 text-center flex flex-col justify-center items-center shadow-[0_4px_20px_rgba(0,0,0,0.2)] hover:border-sky-400/40 transition-colors">
-              <span className="text-4xl sm:text-5xl font-black text-sky-300 mb-1 drop-shadow-[0_0_12px_rgba(125,211,252,0.3)]">500</span>
-              <span className="text-slate-400 text-xs sm:text-sm font-medium">Expected UMD Attendees</span>
+            <div className="bg-[#140c2a]/70 rounded-[4px] border border-blue-500/20 p-6 text-center flex flex-col justify-center items-center shadow-[0_4px_20px_rgba(0,0,0,0.2)] hover:border-sky-400/40 transition-colors">
+              <span className="text-4xl sm:text-5xl font-black text-sky-300 mb-1">500</span>
+              <span className="text-slate-400 text-xs sm:text-sm font-medium">Expected QSITE 2027 Attendees</span>
             </div>
           </div>
         </section>
@@ -146,23 +145,23 @@ window.Home = function Home({ navigateTo }) {
         {/* Introduction to Quantum Coalition */}
         <section>
           <div className="flex items-center gap-3 mb-8">
-            <span className="h-2 w-2 rounded-full bg-sky-300 shadow-[0_0_8px_#7dd3fc]"></span>
             <h2 className="text-[15px] font-extrabold tracking-[0.22em] uppercase text-sky-300">
-              Introduction to Quantum Coalition
+              About the Quantum Coalition
             </h2>
           </div>
 
-          <div className="bg-[#140c2a]/70 rounded-2xl border border-blue-500/20 p-6 sm:p-10 space-y-6 backdrop-blur-md shadow-[0_10px_30px_rgba(15,8,38,0.5)]">
+          <div className="bg-[#140c2a]/70 rounded-[4px] border border-blue-500/20 p-6 sm:p-10 space-y-6 backdrop-blur-md shadow-[0_10px_30px_rgba(15,8,38,0.5)]">
             <div className="space-y-4 w-full">
               <h3 className="text-2xl sm:text-3xl font-extrabold text-white leading-snug">
                 An International Network for Undergraduate Quantum Talent
               </h3>
               <p className="text-slate-300 text-base sm:text-lg leading-relaxed font-light">
-                Founded in 2020 by student leaders at Yale and Stanford, the <strong className="text-sky-200 font-semibold">Quantum Coalition</strong> is an 
+                Beginning in 2020 as a collaboration among students at Yale and Stanford, the <a href="https://quantumcoalition.io" target="_blank" rel="noopener noreferrer" className="text-sky-200 font-semibold hover:text-sky-300 underline underline-offset-4 decoration-sky-300/50 transition-colors">Quantum Coalition</a> is an
                 undergraduate-led non-profit organization uniting student quantum computing groups across 15+ universities in the U.S. and Canada.
               </p>
               <p className="text-slate-400 text-sm sm:text-base leading-relaxed">
-                Our mission is to build community, democratize quantum education resources, and create direct recruitment pipelines with industry leaders. Our track record includes hosting international hackathons and research-athons such as <strong className="text-slate-200">QCHack</strong> (2,100+ participants), <strong className="text-slate-200">S.Q.U.I.D.</strong>, <strong className="text-slate-200">Q.R.I.S.E.</strong>, and <strong className="text-slate-200">F.L.I.Q.</strong> (organized in collaboration with the UN International Telecommunication Union).
+                Our mission is to build community, share resources, and support the quantum workforce by creating direct recruitment pipelines with industry leaders. 
+                Our track record includes hosting international hackathons and research-athons such as <strong className="text-slate-200">QCHack</strong>, <strong className="text-slate-200">S.Q.U.I.D.</strong>, <strong className="text-slate-200">Q.R.I.S.E.</strong>, and <strong className="text-slate-200">F.L.I.Q.</strong> (organized in collaboration with the UN International Telecommunication Union).
               </p>
             </div>
           </div>

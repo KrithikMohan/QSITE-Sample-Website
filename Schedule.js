@@ -107,10 +107,10 @@ window.Schedule = function Schedule({ navigateTo }) {
   };
 
   return (
-    <div className="min-h-screen bg-[#030712] text-slate-100 font-sans animate-fade-in">
+    <div className="min-h-screen bg-gradient-to-b from-[#090514] via-[#110a26] to-[#0a0618] text-slate-100 font-sans animate-fade-in selection:bg-blue-500 selection:text-white">
       <div className="max-w-[1400px] mx-auto px-5 sm:px-8 md:px-10 py-24 sm:py-28 md:py-[120px] pb-24">
         {/* Header */}
-        <h1 className="text-[clamp(32px,5vw,48px)] font-extrabold tracking-tight leading-[1.2] mb-4 text-cyan-400">
+        <h1 className="text-[clamp(32px,5vw,48px)] font-extrabold tracking-tight leading-[1.2] mb-4 text-sky-300">
           Schedule
         </h1>
         <p className="text-[18px] sm:text-[20px] text-slate-400 mb-6 leading-relaxed max-w-3xl">
@@ -125,7 +125,7 @@ window.Schedule = function Schedule({ navigateTo }) {
           <span className="hidden sm:inline text-white/20">•</span>
           <span>
             <span className="text-slate-500 uppercase tracking-[0.18em] text-xs font-bold mr-2">Theme</span>
-            <span className="text-cyan-300 font-semibold">Pathways into Quantum</span>
+            <span className="text-sky-300 font-semibold">Pathways into Quantum</span>
           </span>
         </div>
 
@@ -135,7 +135,7 @@ window.Schedule = function Schedule({ navigateTo }) {
             <button
               key={day.id}
               onClick={() => scrollToDay(day.id)}
-              className="border border-cyan-400/40 text-cyan-300 hover:bg-white/5 px-4 py-2 rounded-md font-bold text-xs tracking-wide transition-all cursor-pointer"
+              className="border border-sky-300/40 text-sky-200 hover:bg-blue-900/30 hover:border-blue-400/60 px-4 py-2 rounded-[4px] font-bold text-xs tracking-wide transition-colors cursor-pointer"
             >
               {day.label} · {day.date.split(",")[0]}
             </button>
@@ -148,12 +148,12 @@ window.Schedule = function Schedule({ navigateTo }) {
             <section
               key={day.id}
               id={day.id}
-              className="rounded-xl border border-cyan-400/20 bg-gradient-to-b from-cyan-400/[0.04] to-white/[0.01] p-6 sm:p-7 scroll-mt-24"
+              className="rounded-[4px] border border-blue-500/20 bg-[#140c2a]/70 p-6 sm:p-7 scroll-mt-24 backdrop-blur-md"
             >
               {/* Day header */}
               <div className="mb-6 pb-5 border-b border-white/10">
                 <p className="flex flex-wrap items-baseline gap-x-3 gap-y-1 mb-2">
-                  <span className="text-[13px] font-extrabold tracking-[0.22em] uppercase text-cyan-400">
+                  <span className="text-[13px] font-extrabold tracking-[0.22em] uppercase text-sky-300">
                     {day.label}
                   </span>
                   <span className="text-[13px] font-medium text-slate-400">{day.date}</span>
@@ -167,8 +167,8 @@ window.Schedule = function Schedule({ navigateTo }) {
               <ol className="relative border-l border-white/10 ml-1 space-y-7">
                 {day.sessions.map((session, i) => (
                   <li key={i} className="pl-5 relative">
-                    <span className="absolute -left-[5px] top-[6px] w-[9px] h-[9px] rounded-full bg-cyan-400 ring-4 ring-[#030712]" />
-                    <p className="font-mono text-[13px] font-semibold text-cyan-300 mb-1">
+                    <span className="absolute -left-[5px] top-[6px] w-[9px] h-[9px] rounded-full bg-sky-300" />
+                    <p className="font-mono text-[13px] font-semibold text-sky-300 mb-1">
                       {session.time}
                     </p>
                     <h3 className="text-[16px] font-bold text-white leading-snug">

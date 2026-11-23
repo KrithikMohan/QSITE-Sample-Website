@@ -69,10 +69,10 @@ window.Support = function Support({ navigateTo }) {
   ];
 
   return (
-    <div className="min-h-screen bg-[#030712] text-slate-100 font-sans animate-fade-in">
+    <div className="min-h-screen bg-gradient-to-b from-[#090514] via-[#110a26] to-[#0a0618] text-slate-100 font-sans animate-fade-in selection:bg-blue-500 selection:text-white">
       <div className="max-w-[1400px] mx-auto px-5 sm:px-8 md:px-10 py-24 sm:py-28 md:py-[120px] pb-24">
         {/* Header */}
-        <h1 className="text-[clamp(32px,5vw,48px)] font-extrabold tracking-tight leading-[1.2] mb-4 text-cyan-400">
+        <h1 className="text-[clamp(32px,5vw,48px)] font-extrabold tracking-tight leading-[1.2] mb-4 text-sky-300">
           Support
         </h1>
         <p className="text-[18px] sm:text-[20px] text-slate-400 mb-12 leading-relaxed max-w-3xl">
@@ -81,10 +81,10 @@ window.Support = function Support({ navigateTo }) {
 
         {/* ── LOGISTICS FAQ SECTION ── */}
         <section className="mb-16">
-          <h2 className="text-[16px] font-extrabold tracking-[0.22em] uppercase text-cyan-400 mb-6">
+          <h2 className="text-[16px] font-extrabold tracking-[0.22em] uppercase text-sky-300 mb-6">
             Logistics FAQ
           </h2>
-          <div className="rounded-xl border border-white/10 bg-white/[0.01] divide-y divide-white/10 max-w-4xl">
+          <div className="rounded-[4px] border border-blue-500/20 bg-[#140c2a]/70 divide-y divide-blue-500/15 backdrop-blur-md max-w-4xl">
             {faqs.map((faq, i) => {
               const isOpen = openIndex === i;
               return (
@@ -94,11 +94,11 @@ window.Support = function Support({ navigateTo }) {
                     aria-expanded={isOpen}
                     className="w-full flex items-center justify-between gap-6 text-left px-5 sm:px-6 py-5 cursor-pointer hover:bg-white/[0.02] transition-colors"
                   >
-                    <span className={`text-[16px] font-bold ${isOpen ? "text-cyan-300" : "text-white"}`}>
+                    <span className={`text-[16px] font-bold ${isOpen ? "text-sky-300" : "text-white"}`}>
                       {faq.question}
                     </span>
                     <span
-                      className={`shrink-0 text-cyan-400 text-xl leading-none transition-transform duration-200 ${
+                      className={`shrink-0 text-sky-300 text-xl leading-none transition-transform duration-200 ${
                         isOpen ? "rotate-45" : ""
                       }`}
                       aria-hidden="true"
@@ -112,7 +112,7 @@ window.Support = function Support({ navigateTo }) {
                       {faq.action && (
                         <button
                           onClick={() => handleNav(faq.action.target)}
-                          className="mt-3 text-sm font-bold text-cyan-400 hover:text-cyan-300 transition-colors cursor-pointer"
+                          className="mt-3 text-sm font-bold text-sky-300 hover:text-sky-200 transition-colors cursor-pointer"
                         >
                           {faq.action.label} &rarr;
                         </button>
@@ -125,11 +125,11 @@ window.Support = function Support({ navigateTo }) {
           </div>
         </section>
 
-        <hr className="border-none border-t border-white/10 mb-16" />
+        <hr className="border-none border-t border-blue-500/20 mb-16" />
 
         {/* ── DIRECT CONTACT CHANNELS SECTION ── */}
         <section>
-          <h2 className="text-[16px] font-extrabold tracking-[0.22em] uppercase text-cyan-400 mb-6">
+          <h2 className="text-[16px] font-extrabold tracking-[0.22em] uppercase text-sky-300 mb-6">
             Direct Contact Channels
           </h2>
 
@@ -142,11 +142,11 @@ window.Support = function Support({ navigateTo }) {
             {organizers.map((person) => (
               <div
                 key={person.name}
-                className="rounded-xl border border-cyan-400/20 bg-gradient-to-b from-cyan-400/[0.04] to-white/[0.01] p-5"
+                className="rounded-[4px] border border-blue-500/20 bg-[#140c2a]/70 p-5 hover:border-sky-400/40 transition-colors"
               >
                 <p className="text-[16px] font-bold text-white">{person.name}</p>
                 <p className="text-[14px] text-slate-400 mt-1">{person.affiliation}</p>
-                {person.role && <p className="text-[13px] text-cyan-300 mt-2">{person.role}</p>}
+                {person.role && <p className="text-[13px] text-sky-300 mt-2">{person.role}</p>}
               </div>
             ))}
           </div>
@@ -159,14 +159,14 @@ window.Support = function Support({ navigateTo }) {
                 href={link.href}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="rounded-xl border border-white/10 bg-white/[0.01] hover:border-cyan-400/40 hover:bg-white/[0.03] transition-colors p-5 block"
+                className="rounded-[4px] border border-blue-500/20 bg-[#140c2a]/70 hover:border-sky-400/40 hover:bg-[#1c1238]/60 transition-colors p-5 block"
               >
                 <p className="text-[13px] font-extrabold tracking-[0.22em] uppercase text-slate-500 mb-1">{link.label}</p>
-                <p className="font-mono text-[15px] text-cyan-300">{link.display}</p>
+                <p className="font-mono text-[15px] text-sky-300">{link.display}</p>
               </a>
             ))}
             {/* TODO: replace with the organizing team's contact email */}
-            <div className="rounded-xl border border-dashed border-white/15 bg-white/[0.01] p-5 flex flex-col justify-center">
+            <div className="rounded-[4px] border border-dashed border-blue-500/30 bg-[#140c2a]/70 p-5 flex flex-col justify-center">
               <p className="text-[13px] font-extrabold tracking-[0.22em] uppercase text-slate-500 mb-1">Email</p>
               <p className="font-mono text-sm text-slate-500">[ Contact email coming soon ]</p>
             </div>
