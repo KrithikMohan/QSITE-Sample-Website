@@ -17,15 +17,11 @@ window.Registration = function Registration({ navigateTo }) {
       <div className="max-w-[1400px] mx-auto px-5 sm:px-8 md:px-10 py-12 pb-24 space-y-12">
         
         {/* ── HEADER HERO ── */}
-        <section className="relative text-center max-w-3xl mx-auto pt-6 pb-2">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-purple-950/50 border border-purple-500/30 text-sky-300 text-xs font-semibold tracking-wide uppercase mb-6 backdrop-blur-md">
-            <span className="h-2 w-2 rounded-full bg-sky-300 animate-pulse"></span>
-            Pre-Registration & Interest List
-          </div>
+        <section className="relative text-center max-w-4xl mx-auto pt-6 pb-2"> 
           
           <h1 className="text-[clamp(34px,5.5vw,56px)] font-black tracking-tight leading-[1.1] mb-6 text-white">
-            Join the Interest List for{" "}
-            <span className="bg-gradient-to-r from-sky-300 via-indigo-300 to-purple-400 bg-clip-text text-transparent">
+            Join the Mailing List for{" "}
+            <span className="bg-gradient-to-r from-sky-300 via-sky-200 to-blue-400 bg-clip-text text-transparent">
               Q-SITE USA 2027
             </span>
           </h1>
@@ -39,7 +35,7 @@ window.Registration = function Registration({ navigateTo }) {
             <span>•</span>
             <span>📍 University of Maryland</span>
             <span>•</span>
-            <span>🎟️ Free for Students</span>
+            <span>🎟️ $25 Registration Fee</span>
           </div>
         </section>
 
@@ -127,7 +123,7 @@ window.Registration = function Registration({ navigateTo }) {
                     value="Subscribe for Updates →"
                     name="subscribe"
                     id="mc-embedded-subscribe"
-                    className="button w-full py-3.5 rounded-lg bg-gradient-to-r from-sky-400 via-sky-300 to-indigo-400 text-slate-950 font-black text-xs tracking-wider uppercase shadow-[0_0_20px_rgba(56,189,248,0.3)] hover:shadow-[0_0_30px_rgba(56,189,248,0.5)] transition-all cursor-pointer active:scale-[0.99]"
+                    className="button w-full py-3.5 rounded-lg bg-gradient-to-r from-sky-300 via-sky-200 to-blue-400 text-slate-950 font-black text-xs tracking-wider uppercase transition-all cursor-pointer active:scale-[0.99]"
                   />
                 </div>
 
