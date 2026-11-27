@@ -61,7 +61,7 @@ function QSITEWebsite() {
       {/* ── FOOTER (UQA structure, no expanded name) ── */}
       <footer className="bg-[#0a0618] border-t border-sky-400 mt-16">
         <div className="max-w-[1400px] mx-auto px-5 sm:px-8 md:px-10 py-12 flex flex-col sm:flex-row items-center justify-between gap-4 text-center sm:text-left text-slate-400 text-sm">
-          <p>© 2026 QSITE</p>
+          <p>© 2027 QSITE</p>
           <div className="flex items-center gap-6 text-xs">
             <a
               href="https://quantumcoalition.io"
@@ -70,14 +70,6 @@ function QSITEWebsite() {
               className="text-slate-400 hover:text-cyan-400 transition-colors"
             >
               Quantum Coalition
-            </a>
-            <a
-              href="https://qsiteconf.ca"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-slate-400 hover:text-cyan-400 transition-colors"
-            >
-              qsiteconf.ca
             </a>
           </div>
         </div>
